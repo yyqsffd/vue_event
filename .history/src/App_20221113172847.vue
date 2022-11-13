@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     async getDataFn () {
-      const res = await getDataAPI()
+      const res = getDataAPI()
       console.log(res)
     }
   }

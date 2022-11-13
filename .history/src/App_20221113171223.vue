@@ -6,15 +6,15 @@
 </template>
 
 <script>
-import { getDataAPI } from '@/api'
+import { getListAPI } from '@/api'
 export default {
   name: 'app',
   created () {
-    this.getDataFn()
+    this.getListFn()
   },
   methods: {
-    async getDataFn () {
-      const res = await getDataAPI()
+    getListFn () {
+      const res = getListAPI()
       console.log(res)
     }
   }

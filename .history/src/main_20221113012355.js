@@ -3,7 +3,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import '@/assets/global.less'
-import '@/elementUI/'
+import { Button, Select } from 'element-ui'
+Vue.use(Button)
+
 Vue.config.productionTip = false
 new Vue({
   router,

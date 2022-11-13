@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { getDataAPI } from '@/api'
+import { getListAPI } from '@/api'
 export default {
   name: 'app',
   created () {
@@ -14,8 +14,7 @@ export default {
   },
   methods: {
     async getDataFn () {
-      const res = await getDataAPI()
-      console.log(res)
+      const res = getDataFn()
     }
   }
 }
